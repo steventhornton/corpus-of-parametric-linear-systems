@@ -1,0 +1,7 @@
+GR:=DMP([x,y,z,x1,x2,x3], Integer)
+m:MATRIX GR:= matrix [[6, 7*y^4 - 4*x^3 - 7*x^4*y + 7*x^4*y^2, 0, 0, 0], [9*x*y^3 - 6*x - 2*x^3*y^3 - 1, 3*x*y - x - 2*x*y^2 - 2*x*y^3, 7*y^3 + 2*x^2*y^3 + 2*x^4*y^4, 5*x*y^3 + 7*x^4*y + 9, -5], [0, 0, -1, 0, 4], [-3, -8, x^4 - 5*x*y^2 - 8*x^2*y + x^3*y^2, 2, 9*y - 5*x^2 + 2*x^4*y^2 + 5*x^4*y^4], [0, 6*x^4*y + 2*x^2*y^3 + 5*x^4*y^2 + 4, -7, 4*x + 7*x^2 - 5*y^2 + 9*y^4, 14*y^3 - 5*x^4*y + 7*x^3*y^2]]
+v:LIST GR:=[0, 0, 0, 0, 0]
+reg:=psolve(m,v);
+)set output algebra reg-283
+reg
+)set output algebra console

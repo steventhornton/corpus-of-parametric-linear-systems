@@ -1,0 +1,7 @@
+GR:=DMP([x,y,z,x1,x2,x3], Integer)
+m:MATRIX GR:= matrix [[2, 5*x1 + 9*x1^2, 0, 0, 10*x1], [0, 8, -5, -7, - 4*x1 - 4*x1^2], [-4, 0, 6, 0, 8 - 7*x1], [2 - 2*x1, 0, 5 - 4*x1, 7*x1, -7], [3, 13*x1^2, 2*x1^2 - 3, 2*x1 - 7, 0]]
+v:LIST GR:=[0, 0, 0, 0, 0]
+reg:=psolve(m,v);
+)set output algebra reg-196
+reg
+)set output algebra console

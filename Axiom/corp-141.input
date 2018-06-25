@@ -1,0 +1,7 @@
+GR:=DMP([x,y,z,x1,x2,x3], Integer)
+m:MATRIX GR:= matrix [[1, 1, -3, -1], [-2, 3, -6, 6], [-3, 3, 1, -1], [5, -1, 3, 2]]
+v:LIST GR:=[0, 0, 0, 0]
+reg:=psolve(m,v);
+)set output algebra reg-141
+reg
+)set output algebra console
